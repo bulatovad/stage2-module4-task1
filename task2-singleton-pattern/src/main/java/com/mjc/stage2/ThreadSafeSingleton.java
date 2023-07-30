@@ -7,6 +7,8 @@ public class ThreadSafeSingleton {
     }
 
     public static synchronized ThreadSafeSingleton getInstance() {
-        return instance;
+        if(instance != null)
+            return instance;
+        return new ThreadSafeSingleton();
     }
 }
