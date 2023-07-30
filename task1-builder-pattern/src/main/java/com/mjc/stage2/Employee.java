@@ -99,7 +99,7 @@ public class Employee {
             emp.setCarNumber(carNumber);
         }
 
-        public Employee getEmployee() {
+        public Employee build() {
             return this.emp;
         }
     }
