@@ -75,28 +75,34 @@ public class Employee {
         public EmployeeBuilder(){
             this.emp = new Employee();
         }
-        public void setName(String name) {
+        public EmployeeBuilder setName(String name) {
             emp.setName(name);
+            return this;
         }
 
-        public void setLastName(String lastName) {
+        public EmployeeBuilder setLastName(String lastName) {
             emp.setLastName(lastName);
+            return this;
         }
 
-        public void setPosition(String position) {
+        public EmployeeBuilder setPosition(String position) {
             emp.setPosition(position);
+            return this;
         }
 
-        public void setPhone(String phone) {
+        public EmployeeBuilder setPhone(String phone) {
             emp.setPhone(phone);
+            return this;
         }
 
-        public void setEmail(String email) {
+        public EmployeeBuilder setEmail(String email) {
             emp.setEmail(email);
+            return this;
         }
 
-        public void setCarNumber(String carNumber) {
+        public EmployeeBuilder setCarNumber(String carNumber) {
             emp.setCarNumber(carNumber);
+            return this;
         }
 
         public Employee build() {
